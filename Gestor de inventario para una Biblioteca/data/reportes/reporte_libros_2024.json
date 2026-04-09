@@ -1,0 +1,37 @@
+[
+    {
+        "categoria": "Romance",
+        "libros": [
+            {
+                "titulo": "El mundo de alexander",
+                "autor": "Deyvid",
+                "estado": "Disponible"
+            }
+        ]
+    },
+    {
+        "categoria": "Drama",
+        "libros": [
+            {
+                "titulo": "El mundo de deyvid",
+                "autor": "Deyvid",
+                "estado": "Prestado a False"
+            }
+        ]
+    },
+    {
+        "categoria": "fantasia",
+        "libros": [
+            {
+                "titulo": "el señor de los anillos",
+                "autor": "tolkien",
+                "estado": "Prestado a deyvid"
+            },
+            {
+                "titulo": "donquijote",
+                "autor": "deyvid",
+                "estado": "Prestado a False"
+            }
+        ]
+    }
+]
