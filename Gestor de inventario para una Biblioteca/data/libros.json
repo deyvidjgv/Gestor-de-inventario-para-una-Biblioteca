@@ -1,33 +1,9 @@
 [
     {
-        "titulo": "El mundo de alexander",
-        "autor": "Deyvid",
-        "genero": "Romance",
-        "anio": 2026,
-        "estado": false,
-        "prestado": "deyvid"
-    },
-    {
-        "titulo": "El mundo de deyvid",
-        "autor": "Deyvid",
-        "genero": "Drama",
-        "anio": 2025,
-        "estado": true,
-        "prestado": false
-    },
-    {
-        "titulo": "el señor de los anillos",
-        "autor": "tolkien",
-        "genero": "fantasia",
-        "anio": 1954,
-        "estado": true,
-        "prestado": "deyvid"
-    },
-    {
-        "titulo": "donquijote",
-        "autor": "deyvid",
-        "genero": "fantasia",
-        "anio": 2003,
+        "titulo": "10 negritos",
+        "autor": "agatha",
+        "genero": "policial",
+        "anio": 2000,
         "estado": true,
         "prestado": false
     }

@@ -3,6 +3,7 @@ from gestion_libros import *
 from buscar_libros import *
 from prestamos import *
 from reportes import *
+from reporteAuditoria import *
 
 
 
@@ -17,7 +18,8 @@ while True:
     print("4. Prestar un libro")
     print("5. Devolver un libro")
     print("6. Generar un reporte del inventario")
-    print("7. Salir")
+    print("7. Reporte de auditoria")
+    print("8. Salir")
     print("=" * 50)
 
     opcion = input("\nSeleccione una opción: ")
@@ -36,6 +38,8 @@ while True:
         case '6':
                 generar_reporte()
         case '7':
+                auditoria()
+        case '8':
                 print("Saliendo del programa...")
                 break
         case _:

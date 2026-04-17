@@ -1,0 +1,12 @@
+{
+    "libro_Problema": [],
+    "resumen": {
+        "numero_de_libros": 5,
+        "numero_de_problemas": 0,
+        "conteo_por_tipo": {
+            "Estado_Invalido": 0,
+            "Prestado_Sin_Usuario": 0,
+            "Disponible_Usuario": 0
+        }
+    }
+}
