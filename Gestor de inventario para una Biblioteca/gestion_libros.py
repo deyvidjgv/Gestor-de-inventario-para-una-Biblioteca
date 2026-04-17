@@ -1,14 +1,15 @@
 import json
 import os
+from ruta import *
 
-archivo = "/home/camper/Documentos/Ejercicios Python - Deyvid/Gestor de inventario para una Biblioteca/data/libros.json"
+ruta_completa = ruta + archivo
 
 def cargar_libros():
     "carga los libros desde  el archivo json"
-    if not os.path.exists(archivo):
+    if not os.path.exists(ruta_completa):
         return []
     try:
-        with open(archivo, "r", encoding="utf-8") as f:
+        with open(ruta_completa, "r", encoding="utf-8") as f:
             return json.load(f)
     except json.JSONDecodeError:
         return[]
@@ -38,8 +39,8 @@ def registrar_libro():
     }
     lista_libros = []
     
-    if os.path.exists(archivo):
-        with open(archivo, "r", encoding="utf-8") as f:
+    if os.path.exists(ruta_completa):
+        with open(ruta_completa, "r", encoding="utf-8") as f:
             try:
                 lista_libros = json.load(f)
             except json.JSONDecodeError:
@@ -48,7 +49,7 @@ def registrar_libro():
     lista_libros.append(libro)
     
     #se guarda la lista actualizada
-    with open(archivo, "w", encoding="utf-8") as f:
+    with open(ruta_completa, "w", encoding="utf-8") as f:
         json.dump(lista_libros, f, indent=4, ensure_ascii=False)
 
     print(f"\n¡Libro '{titulo}' guardado exitosamente!")
@@ -60,11 +61,11 @@ def registrar_libro():
 #funcion para ver el inventario
 def ver_inventario():
     
-    if not os.path.exists(archivo):
+    if not os.path.exists(ruta_completa):
         print("No hay libros registrados en el inventario.")
         return
     
-    with open(archivo, 'r', encoding='utf-8') as f:
+    with open(ruta_completa, 'r', encoding='utf-8') as f:
         try:
             libros = json.load(f)
         except json.JSONDecodeError:

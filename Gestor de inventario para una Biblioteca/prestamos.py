@@ -19,7 +19,7 @@ def prestar_libro():
                 return
             libro["prestado"] = nombre
 
-            with open(archivo, "w", encoding="utf-8") as f:
+            with open(ruta_completa, "w", encoding="utf-8") as f:
                 json.dump(lista, f, indent=4, ensure_ascii=False)
 
             print(f"\nDisfruta tu lectura del libro '{titulo}'\n")
@@ -41,7 +41,7 @@ def devolver_libro():
         if libro["titulo"].lower() == titulo and libro["prestado"] == nombre: 
             encontrado = True         
             libro["prestado"] = False
-            with open(archivo, "w", encoding="utf-8") as f:
+            with open(ruta_completa, "w", encoding="utf-8") as f:
                 json.dump(lista, f, indent=4, ensure_ascii=False )
             print(f"\nGracias por devolver el libro '{titulo}'\n")
             break
